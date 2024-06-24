@@ -1,0 +1,11 @@
+variable "project_id" { type = string }
+variable "project_region" { type = string }
+variable "bq_flat_filer_image" { type = string }
+variable "cloud_run_instance_name" { type = string }
+variable "cloud_workflow_name" { type = string }
+variable "service_account_name" { type = string }
+variable "staging_dataset_name" { type = string }
+variable "staging_dataset_location" { type = string }
+variable "destination_bucket_name" { type = string }
+variable "destination_bucket_location" { type = string }
+variable "env_vars" { type = map }

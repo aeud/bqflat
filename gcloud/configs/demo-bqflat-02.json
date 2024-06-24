@@ -1,0 +1,7 @@
+{
+    "schedule": "0 0 * * *",
+    "time_zone": "America/New_York",
+    "sql_file": "query.sql",
+    "file_key": "file_02_{{ name }}_{{ yesterday_dash }}.csv.gz",
+    "vars": "{\"name\": \"john\"}"
+}
