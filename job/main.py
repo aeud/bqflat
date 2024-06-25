@@ -51,7 +51,7 @@ def main(sql, destination_uri, date, json_vars):
     try:
         sql = base64.b64decode(sql).decode("utf-8")
     except:
-        logger.info("skipping base64 decoding of the SQL query" % sql)
+        logger.info("skipping base64 decoding of the SQL query")
         pass
     try:
         vars = json.loads(json_vars)
