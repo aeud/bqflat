@@ -101,6 +101,12 @@ We can distinguish the runtime based rendering with the `{{variable}}` notation 
 
 ![architecture](./images/architecture.png)
 
+### Automation pipelines
+#### Task image build
+![ci](./images/ci.png)
+#### Cloud resources deployment
+![cd](./images/cd.png)
+
 ## How to
 
 ### Build the task image
