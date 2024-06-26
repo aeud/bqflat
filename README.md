@@ -150,10 +150,13 @@ docker run --rm -it \
     -e BIGQUERY_JOB_EXECUTING_PROJECT=project_name \
     -e BIGQUERY_STAGING_DATASET=dataset_name \
     -v $HOME/.config/gcloud:/root/.config/gcloud \
-    us.gcr.io/your-project-id/image-name \
+    aeud/bqflat \
     --sql 'select 1 as one' \
     --destination-uri gs://bucket-name/filename.csv.gz
 ```
+*We share the `gcloud` credentials by sharing the volume*
+
+**More documentation about the task [here](./job/README.md)**
 
 ### Deploy the cloud infrastructure (from a local machine)
 
