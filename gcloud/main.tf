@@ -7,6 +7,7 @@ resource "google_service_account" "main_service_account" {
     account_id = var.service_account_name
 }
 
+# Optional
 resource "google_project_iam_member" "grant_bigquery_dataviewer" {
     project = var.project_id
     role = "roles/bigquery.dataViewer"
